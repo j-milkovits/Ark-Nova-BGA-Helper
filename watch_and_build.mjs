@@ -1,6 +1,5 @@
-const esbuild = require('esbuild');
+import * as esbuild from 'esbuild';
 
-// Function to build and watch
 async function buildAndWatch(entry, output) {
   try {
     const ctx = await esbuild.context({
@@ -22,7 +21,6 @@ async function buildAndWatch(entry, output) {
   }
 }
 
-// Main function to initialize builds
 (async () => {
   await buildAndWatch('./scripts/content.js', './dist/bundledContent.js');
 })();

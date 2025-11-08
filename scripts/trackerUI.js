@@ -71,15 +71,15 @@ export function injectTrackerUI() {
   const addCardBtn = container.querySelector('#add-card-btn');
   const trackerList = container.querySelector('#tracker-list');
   addCardBtn.addEventListener('click', () => {
-      const cardName = prompt('Enter card name:');
-      if (cardName) {
-          stateManager.addOpponentTrackedCard(cardName);
-      }
+    const cardName = prompt('Enter card name:');
+    if (cardName) {
+      stateManager.addOpponentTrackedCard(cardName);
+    }
   });
 
   const clearCardsBtn = container.querySelector('#clear-cards-btn');
   clearCardsBtn.addEventListener('click', () => {
-        stateManager.clearOpponentTrackedCards();
+    stateManager.clearOpponentTrackedCards();
   });
 }
 

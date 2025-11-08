@@ -5,6 +5,7 @@ import { updateCardTags, observeCards } from './cardTagger.js';
 import { stateManager } from './stateManager.js';
 import { CardTracker } from './cardTracker.js';
 import { getYourPlayedSponsors } from './boardChecker.js';
+import { initReminders } from './reminders';
 
 function onStart() {
   stateManager.loadState();
@@ -21,6 +22,8 @@ function onStart() {
     observeCards();
 
     getYourPlayedSponsors()
+
+    initReminders();
   }, 1000);
 }
 

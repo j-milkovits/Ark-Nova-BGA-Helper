@@ -1,14 +1,15 @@
 {
   "name": "arknovaextension",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.mjs",
+    "watch_and_build": "node watch_and_build.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "esbuild": "^0.24.0"
   }
